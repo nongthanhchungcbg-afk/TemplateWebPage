@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Build a strong programming foundation with practical lessons in web technology, C, and Java.">
+  <meta name="theme-color" content="#f8f8f2">
+  <title>CodeCraft — Learn by building</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="CodeCraft home">
+        <span class="brand-mark" aria-hidden="true">&lt;/&gt;</span>
+        <span>codecraft<span class="brand-period">.</span></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu" aria-label="Open navigation">
+        <span></span><span></span>
+      </button>
+      <div class="nav-panel" id="primary-menu">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#courses">Explore</a></li>
+          <li><a class="nav-link" href="#web">Web basics</a></li>
+          <li><a class="nav-link" href="#programming">Programming</a></li>
+        </ul>
+        <a class="nav-cta" href="#courses">Start learning <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home">
+      <div class="hero-grid container">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> YOUR NEXT CHAPTER STARTS HERE</p>
+          <h1>Make the web<br>your <span>playground.</span></h1>
+          <p class="hero-intro">Big ideas start with small steps. Learn the building blocks of the web and programming, one hands-on lesson at a time.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#courses">Find your first lesson <span aria-hidden="true">→</span></a>
+            <a class="button button-text" href="#web">See how it works <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="proof-points">
+            <span class="proof-icon" aria-hidden="true">✳</span>
+            <p><strong>Made for curious minds.</strong><br>Clear concepts. Practical examples.</p>
+          </div>
+        </div>
+        <div class="hero-art">
+          <img src="assets/learning-illustration.svg" alt="Illustration of a code editor displaying a small HTML page">
+          <div class="floating-note note-top"><span class="note-dot"></span> learning by doing</div>
+          <div class="floating-note note-bottom"><span>01</span> small step, big progress</div>
+        </div>
+      </div>
+      <div class="hero-bottom container">
+        <span>START WITH THE BASICS</span>
+        <span class="hero-bottom-line"></span>
+        <span>GROW AT YOUR OWN PACE</span>
+      </div>
+    </section>
+
+    <section class="courses section-space" id="courses">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">A GOOD PLACE TO BEGIN</p>
+            <h2>Choose a path.<br><span>Start creating.</span></h2>
+          </div>
+          <div class="heading-aside">
+            <p>Explore approachable introductions to the tools and languages behind the things you use every day.</p>
+            <form class="search-form" role="search">
+              <label class="sr-only" for="course-search">Search lessons</label>
+              <span class="search-icon" aria-hidden="true">⌕</span>
+              <input id="course-search" name="search" type="search" placeholder="Find a topic..." autocomplete="off">
+              <button type="submit" aria-label="Search lessons">↗</button>
+            </form>
+            <p class="search-status" aria-live="polite"></p>
+          </div>
+        </div>
+
+        <div class="course-grid">
+          <article class="course-card course-html" data-search="html web technology markup structure browser">
+            <div class="course-card-top"><span class="course-icon" aria-hidden="true">&lt;/&gt;</span><span class="course-number">01 / THE WEB</span></div>
+            <h3>Web technology</h3>
+            <p>Discover how HTML gives web pages their structure and connects ideas across the internet.</p>
+            <a href="#web" aria-label="Explore the web technology lesson">Explore lesson <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="course-card course-c" data-search="c programming systems memory compiler operating system">
+            <div class="course-card-top"><span class="course-icon" aria-hidden="true">C</span><span class="course-number">02 / THE LOGIC</span></div>
+            <h3>C programming</h3>
+            <p>Build a foundation in a fast, influential language designed for getting close to the machine.</p>
+            <a href="#programming" aria-label="Explore the C programming lesson">Explore lesson <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="course-card course-java" data-search="java programming object oriented virtual machine bytecode">
+            <div class="course-card-top"><span class="course-icon" aria-hidden="true">☕</span><span class="course-number">03 / THE OBJECTS</span></div>
+            <h3>Java essentials</h3>
+            <p>Meet object-oriented programming and see how Java runs across different platforms.</p>
+            <a href="#java" aria-label="Explore the Java lesson">Explore lesson <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+        <p class="empty-state" hidden>No lessons match that search. Try “HTML”, “C”, or “Java”.</p>
+      </div>
+    </section>
+
+    <section class="lesson lesson-web" id="web">
+      <div class="container lesson-grid">
+        <div class="lesson-copy">
+          <p class="eyebrow"><span class="lesson-index">01</span> THE FOUNDATION</p>
+          <h2>Every great site<br>starts with a <span>structure.</span></h2>
+          <p>HTML, or HyperText Markup Language, is the framework behind web pages. It organizes text, images, and links so a browser can turn them into a page people can explore.</p>
+          <a class="lesson-link" href="#courses">Back to all lessons <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="lesson-visual web-visual" aria-hidden="true">
+          <div class="browser-card">
+            <div class="browser-top"><span></span><span></span><span></span><i>your-first-page.html</i></div>
+            <div class="code-lines">
+              <p><b>01</b><span class="code-purple">&lt;main&gt;</span></p>
+              <p><b>02</b>&nbsp;&nbsp;<span class="code-green">&lt;h1&gt;</span>Hello, web!<span class="code-green">&lt;/h1&gt;</span></p>
+              <p><b>03</b>&nbsp;&nbsp;<span class="code-green">&lt;p&gt;</span>Let’s make something.<span class="code-green">&lt;/p&gt;</span></p>
+              <p><b>04</b><span class="code-purple">&lt;/main&gt;</span></p>
+              <p class="cursor-line"><b>05</b><span class="code-cursor"></span></p>
+            </div>
+            <div class="browser-preview"><span>✳</span><strong>Hello, web!</strong><small>A little page with a lot of possibility.</small></div>
+          </div>
+          <span class="visual-stamp">HTML<br>01</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="lesson lesson-programming" id="programming">
+      <div class="container lesson-grid">
+        <div class="lesson-visual c-visual" aria-hidden="true">
+          <div class="terminal-card">
+            <div class="terminal-top"><span></span><span></span><span></span><i>hello.c</i></div>
+            <div class="terminal-code">
+              <p><b>01</b> <span class="code-purple">#include</span> <span class="code-green">&lt;stdio.h&gt;</span></p>
+              <p><b>02</b></p>
+              <p><b>03</b> <span class="code-purple">int</span> main() {</p>
+              <p><b>04</b>&nbsp;&nbsp;printf(<span class="code-yellow">"Hello, world!"</span>);</p>
+              <p><b>05</b>&nbsp;&nbsp;<span class="code-purple">return</span> 0;</p>
+              <p><b>06</b> }</p>
+            </div>
+            <div class="terminal-result"><span>▶</span> Hello, world! <span class="result-ok">process finished</span></div>
+          </div>
+          <span class="visual-orbit"></span>
+        </div>
+        <div class="lesson-copy">
+          <p class="eyebrow"><span class="lesson-index">02</span> THINK IN LOGIC</p>
+          <h2>Small instructions.<br><span>Powerful ideas.</span></h2>
+          <p>C is a procedural programming language known for its simple core and direct access to memory. It helped shape systems software, operating systems, and the tools developers use today.</p>
+          <a class="lesson-link" href="#courses">Explore C programming <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="lesson lesson-java" id="java">
+      <div class="container lesson-grid">
+        <div class="lesson-copy">
+          <p class="eyebrow"><span class="lesson-index">03</span> THINK IN OBJECTS</p>
+          <h2>Write once.<br>Go <span>everywhere.</span></h2>
+          <p>Java is an object-oriented language used across many kinds of applications. Its code compiles to bytecode, which runs on the Java Virtual Machine on many different systems.</p>
+          <a class="lesson-link" href="#courses">Explore Java essentials <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="java-visual" aria-hidden="true">
+          <div class="java-orbit orbit-one"></div><div class="java-orbit orbit-two"></div>
+          <div class="java-core"><span>J</span><small>JAVA<br>VIRTUAL MACHINE</small></div>
+          <span class="java-node node-one">BYTECODE</span>
+          <span class="java-node node-two">ANY OS</span>
+          <span class="java-node node-three">ONE CODEBASE</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="closing-cta">
+      <div class="container closing-inner">
+        <div><p class="eyebrow">YOUR FIRST LINE IS WAITING</p><h2>Curiosity looks<br>good on you.</h2></div>
+        <a class="button button-light" href="#courses">Pick a lesson <span aria-hidden="true">↗</span></a>
+        <span class="cta-spark" aria-hidden="true">✳</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand footer-brand" href="#home"><span class="brand-mark" aria-hidden="true">&lt;/&gt;</span><span>codecraft<span class="brand-period">.</span></span></a>
+      <p>Made for curious minds, everywhere.</p>
+      <a class="back-top" href="#home">Back to top ↑</a>
+      <small>© 2026 CODECRAFT STUDIO</small>
+    </div>
+  </footer>
+</body>
+</html>
